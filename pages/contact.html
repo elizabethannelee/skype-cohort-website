@@ -1,0 +1,50 @@
+<!-- No need to bother with doctypes -->
+<html>
+  <head>
+    <link rel="stylesheet" href="../stylesheet.css"/>
+    <script src="index.js"></script>
+    <title>Liz Lee</title>
+    <script>
+    function buttonClicked () {
+      alert("Ack! Sorry! This form doesn't work! I need to learn more!");
+    }
+    </script>
+  </head>
+  <!-- We've told the web browser to run the function main() when the page laods. I need to look up & absorb what this means. -->
+  <body onload="main()">
+    <div id="top-line"></div>
+    <div id="nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Diary</a></li>
+        <li><a href="inspiration.html">Inspiration</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <header>
+    <h1 class="center">This form is sad and doesn't work.</h1>
+    </header>
+    <div>
+    <!-- Here's an attempt to make a form -->
+      <form  method="post">
+<!-- form action="/my-handling-form-page" The action attribute defines the location (an URL) where the form's collected data should be sent.
+The method attribute defines which HTTP method to send the data with (it can be "get" or "post").
+Not sure how to sort this out YET-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" />
+
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="user_mail" />
+
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+
+      </form>
+    </div>
+      <div class="button">
+    <!-- <button type="submit">Send your message</button> ADD THIS LATER -->
+        <button onclick="buttonClicked()">Click Me</button>
+      </div>
+  </body>
+</html>

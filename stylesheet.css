@@ -1,0 +1,120 @@
+body {
+  background-color: white;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+p.quote {
+  font-style: italic;
+}
+
+header {
+  padding: 1em;
+  color: white;
+  background-color: #333;
+  clear: left;
+  text-align: center;
+  font-size: 200%;
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+/*The background color didn't work??? */
+/*
+TO DO:
+Think I need to specify these as nav bar lists so it doesn't mess up other lists*/
+
+
+div li {
+    float: left;
+}
+
+div li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+div li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+div a {
+  display: block;
+  padding: 8px;
+}
+
+
+.viewer {
+	text-align: center;
+  position: relative;
+  <!-- you need this on the parent to make it work-->
+  max-width: : 640px;
+  max-height: 480px;
+  padding: 0px;
+  /*Trying to figure out how to make the pictures appear more consistent
+  in size and fit within the slideshow viewer*/
+}
+
+#ViewerImg {
+  max-width: 500px;
+  max-height: 500px;
+  border: 10px solid black;
+  margin: 20px;
+}
+/*I can't figure out how to make the images a consistent size within the viewer?*/
+
+.caption {
+  text-align: center;
+  padding: 50px;
+  color: #333;
+}
+
+.buttons {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  height: 32px;
+  width: 100%;
+  vertical-align: baseline;
+}
+
+/*This can't be the best way to approach positioning the buttons on the viewer,
+but it's the closest I managed this week.*/
+
+.next {
+  position: absolute;;
+  right: 15%;
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.previous {
+  position: absolute;;
+  left: 15%;
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+/*How do we style the buttons themselves? Fonts? Colors?*/
+
+.question {
+  position: absolute;
+  margin: inherit;
+}
+/*The message field and button are not aligned with the text?
+Need to figure out how to fix that*/

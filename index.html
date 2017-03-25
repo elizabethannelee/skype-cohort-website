@@ -1,0 +1,37 @@
+<!-- No need to bother with doctypes -->
+<html>
+  <head>
+    <title>Parenting and Technology</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="index.js"></script>
+    <title>Liz Lee</title>
+  </head>
+  <!-- We've told the web browser to run the function main() when the page laods. I need to look up & absorb what this means. -->
+  <body onload="main()">
+    <div id="top-line"></div>
+  <!--Just seeing what this does-->
+    <div id="nav">
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/blog.html">Diary</a></li>
+        <li><a href="pages/inspiration.html">Inspiration</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <header>
+      <h1 class="center">How is technology shaping your experience as a parent?</h1>
+    </header>
+    <div class="viewer">
+      <div class="image">
+        <img id="viewerImg" />
+      </div>
+      <div class="buttons">
+          <div class="previous"><button onclick="previous()">Previous</button></div>
+          <div class="next"><button onclick="next()">Next</button></div>
+      </div>
+    </div>
+      <div class="caption">Actions. Decisions. Perceptions.</div>
+    </body>
+</html>
